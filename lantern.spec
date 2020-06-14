@@ -18,9 +18,9 @@ AutoReq: no
 #dummy
 #BUILDHOST:    localhost
 #BUILDTIME:    Sun Dec 10 22:45:08 2017
-#SOURCERPM:    lantern-4.4.1.src.rpm
+#SOURCERPM:    lantern-5.9.13.src.rpm
 
-#RPMVERSION:   4.14.0
+#RPMVERSION:   5.9.13
 
 
 
@@ -30,28 +30,17 @@ AutoReq: no
 #ARCH:         x86_64
 BuildArch:     x86_64
 Name:          lantern
-Version:       4.4.1
-Release:       3
+Version:       5.9.13
+Release:       1
 Source0: %{name}-%{version}.tar.gz
-License:       see /usr/share/doc/lantern/copyright 
-Group:         Converted/net
+License:       /usr/share/doc/lantern/copyright 
+Group:         net
 Summary:       Censorship circumvention tool\nLantern allows you to access sites blocked by internet censorship.\nWhen you run it, Lantern reroutes traffic to selected domains through servers located where such domains are uncensored.
-Distribution:  Debian
-
-
-
-
-
-
-
-
 
 Provides:      application()  
 Provides:      application(lantern.desktop)  
-Provides:      lantern = 4.4.1-2
-Provides:      lantern = 4.4.1-3
-Provides:      lantern(x86-64) = 4.4.1-2
-Provides:      lantern(x86-64) = 4.4.1-3
+Provides:      lantern = 5.9.13-1
+Provides:      lantern(x86-64) = 5.9.13-1
 Requires:      /bin/bash  
 Requires:      libappindicator-devel  
 Requires:      libappindicator-gtk3-devel  
